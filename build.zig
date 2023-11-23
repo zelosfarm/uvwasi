@@ -12,6 +12,12 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
+    uvwasi.want_lto = false;
+    uvwasi.disable_sanitize_c = true;
+    if (optimize == .Debug or optimize == .ReleaseSafe)
+        uvwasi.bundle_compiler_rt = true
+    else
+        uvwasi.strip = true;
     uvwasi.linkLibC();
     uvwasi.linkLibrary(b.dependency("uv", .{
         .target = target,
