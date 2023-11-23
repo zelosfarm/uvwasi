@@ -1,0 +1,16 @@
+.{
+    .name = "uvwasi",
+    .version = "0.0.19",
+    .paths = .{
+        "src",
+        "include",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .dependencies = .{
+        .uv = .{
+            .url = "git+https://github.com/zelosfarm/libuv.git#8cfea66a5e4376f4c64d4709f73c2e21b73f2f7e",
+            .hash = "12207ccf9573e9addc5c385b07a52fb52ce8e0bc03ca671b2e0878fb28d03bdf4511",
+        },
+    },
+}

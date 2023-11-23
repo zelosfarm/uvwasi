@@ -65,3 +65,6 @@ cmake_install.cmake
 install_manifest.txt
 _deps/
 *.cbp
+
+/zig-out/
+/zig-cache/
