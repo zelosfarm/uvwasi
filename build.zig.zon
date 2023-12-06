@@ -9,8 +9,8 @@
     },
     .dependencies = .{
         .uv = .{
-            .url = "git+https://github.com/zelosfarm/libuv.git#8cfea66a5e4376f4c64d4709f73c2e21b73f2f7e",
-            .hash = "12207ccf9573e9addc5c385b07a52fb52ce8e0bc03ca671b2e0878fb28d03bdf4511",
+            .url = "git+https://github.com/zelosfarm/libuv.git#95cfee1529323a1930cd4923aee906e58c2e0740",
+            .hash = "1220843e3670bf12b17119c54fd574eca8c3cce3223f2fb57f2ddc39786ef0673c2c",
         },
     },
 }
